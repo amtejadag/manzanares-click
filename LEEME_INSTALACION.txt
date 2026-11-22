@@ -1,0 +1,48 @@
+MANZANARES CLICK - VERSIÓN PWA (APLICACIÓN WEB PROGRESIVA)
+Proyecto demostrativo · Universidad de Caldas · Emprendimiento Digital · IE El Rosario
+Docente: Andrés Mauricio Tejada
+
+CONTENIDO
+- index.html: web con letra grande y todas las funciones actuales.
+- manifest.webmanifest: datos de la app e iconos.
+- sw.js: guarda los archivos esenciales para usarlos sin conexión.
+- icons/: iconos para Android, iPhone y pantalla de inicio.
+
+IMPORTANTE: NO SE INSTALA ABRIENDO index.html CON DOBLE CLIC.
+Las funciones PWA requieren HTTPS o localhost. El HTML sí puede abrirse en local,
+pero así no se registrará el service worker ni aparecerá el instalador.
+
+PARA PROBARLA EN EL COMPUTADOR (DE FORMA LOCAL)
+1. Extrae toda esta carpeta del archivo ZIP.
+2. Abre una terminal dentro de Manzanares_Click_PWA.
+3. Si tienes Python instalado, ejecuta: python -m http.server 8000
+4. Abre http://localhost:8000 en Chrome o Edge.
+5. Ve a DevTools > Application > Manifest y Service Workers para verificarla.
+6. Visita la página una vez con internet, luego prueba sin conexión.
+
+PARA INSTALARLA EN ANDROID Y IPHONE
+1. Publica TODOS los archivos sin cambiar sus rutas en un alojamiento HTTPS.
+   GitHub Pages puede servir archivos estáticos desde un repositorio público.
+2. Comparte el enlace HTTPS, ábrelo desde el teléfono y usa «Instalar como app».
+3. Android/Chrome: instalar desde el aviso o desde el menú del navegador.
+4. iPhone/Safari: Compartir > Agregar a pantalla de inicio.
+
+EJEMPLO CON GITHUB PAGES
+1. Crea un repositorio público, p. ej. manzanares-click.
+2. Sube index.html, manifest.webmanifest, sw.js y la carpeta icons/ a la raíz.
+3. En Settings > Pages selecciona «Deploy from a branch», main y /(root).
+4. Espera a que GitHub muestre la URL https://USUARIO.github.io/manzanares-click/.
+5. Abre la URL en el celular para probar instalación.
+
+ESTADO ACTUAL
+- Contiene 12 vitrinas y productos ficticios, búsqueda, filtros, carrito,
+  favoritos, registro local, simulador financiero y pitch.
+- No tiene base de datos central, cuentas reales ni pagos integrados.
+- Los negocios agregados, el carrito y los favoritos se guardan solo en
+  ese navegador. No se sincronizan automáticamente entre celulares.
+- El modo sin conexión conserva la aplicación y su contenido demostrativo.
+- No solicita permisos de ubicación ni envía datos personales a servidores.
+
+PASO SIGUIENTE PARA UN NEGOCIO REAL
+Backend, base de datos, login seguro, panel del comercio, pedidos reales,
+moderación y gestión de consentimiento y datos personales.
